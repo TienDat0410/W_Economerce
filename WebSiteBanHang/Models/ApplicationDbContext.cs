@@ -92,6 +92,50 @@ namespace WebSiteBanHang.Models
                     .HasForeignKey(e => e.UserId)
                     .OnDelete(DeleteBehavior.Cascade);
             });
+
+            // Configure OrderItem entity
+            modelBuilder.Entity<OrderItem>(entity =>
+            {
+                entity.HasKey(e => e.OrderItemId);
+
+                entity.HasOne(e => e.Order)
+                    .WithMany(o => o.OrderItems)
+                    .HasForeignKey(e => e.OrderId)
+                    .OnDelete(DeleteBehavior.Cascade);
+
+                entity.HasOne(e => e.Product)
+                    .WithMany(p => p.OrderItems)
+                    .HasForeignKey(e => e.ProductId)
+                    .OnDelete(DeleteBehavior.Cascade);
+
+                entity.Property(e => e.Price)
+                    .HasColumnType("decimal(18,2)");
+            });
+
+            // Configure ProductCategory entity
+            modelBuilder.Entity<ProductCategory>(entity =>
+            {
+                entity.HasKey(e => e.ProductCategoryId);
+
+                entity.Property(e => e.CategoryId)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
+             /*   entity.HasMany(e => e.Product.Name.ToString())
+                    .WithMany(p => p.ProductCategories)
+                    .UsingEntity<Dictionary<string, object>>(
+                        "ProductProductCategory",
+                        j => j
+                            .HasOne<Product>()
+                            .WithMany()
+                            .HasForeignKey("ProductId")
+                            .OnDelete(DeleteBehavior.Cascade),
+                        j => j
+                            .HasOne<ProductCategory>()
+                            .WithMany()
+                            .HasForeignKey("ProductCategoryId")
+                            .OnDelete(DeleteBehavior.Cascade));*/
+            });
         }
     }
 }
