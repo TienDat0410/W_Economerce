@@ -6,7 +6,11 @@ namespace WebSiteBanHang.Models
     public class ProductCategory
     {
         [Key]
+<<<<<<< HEAD
         [Column(Order = 0)]
+=======
+        public int ProductCategoryId { set; get; };
+>>>>>>> cb233e311d832e59174e10df733f5b61776fd36d
         public int ProductId { get; set; }
 
         [Key]
