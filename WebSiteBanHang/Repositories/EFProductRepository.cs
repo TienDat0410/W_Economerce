@@ -1,14 +1,14 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using WebSiteBanHang.Interfaces;
+﻿using WebSiteBanHang.Interfaces;
 using WebSiteBanHang.Models;
 
-namespace WebSiteBanHang.Repositories {
+namespace WebSiteBanHang.Repositories
+{
     public class EFProductRepository : IProductRepository
     {
         private readonly ApplicationDbContext _context;
-    
-        public EFProductRepository(ApplicationDbContext context) {
+
+        public EFProductRepository(ApplicationDbContext context)
+        {
             _context = context;
         }
 
@@ -24,8 +24,16 @@ namespace WebSiteBanHang.Repositories {
 
         public void AddProduct(Product product)
         {
-            _context.Products.Add(product);
-            _context.SaveChanges();
+            try
+            {
+                _context.Products.Add(product);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error occurred while adding product: " + ex.Message);
+                throw; // Re-throw exception để gửi về controller xử lý
+            }
         }
 
         public void UpdateProduct(Product product)

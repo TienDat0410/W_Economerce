@@ -6,10 +6,16 @@ namespace WebSiteBanHang.Models
     {
         [Key]
         public int CategoryId { get; set; }
+
+        [Required]
+        [StringLength(100)]
         public string Name { get; set; }
+
         public string Description { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
+
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
+
         public ICollection<ProductCategory> ProductCategories { get; set; }
 
     }

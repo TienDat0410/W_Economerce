@@ -57,7 +57,7 @@ namespace WebSiteBanHang.Migrations
                 {
                     CategoryId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Fb:ValueGenerationStrategy", FbValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(type: "BLOB SUB_TYPE TEXT", nullable: false),
+                    Name = table.Column<string>(type: "VARCHAR(100)", maxLength: 100, nullable: false),
                     Description = table.Column<string>(type: "BLOB SUB_TYPE TEXT", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "TIMESTAMP", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
@@ -73,7 +73,7 @@ namespace WebSiteBanHang.Migrations
                 {
                     ProductId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Fb:ValueGenerationStrategy", FbValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(type: "BLOB SUB_TYPE TEXT", nullable: false),
+                    Name = table.Column<string>(type: "VARCHAR(100)", maxLength: 100, nullable: false),
                     Description = table.Column<string>(type: "BLOB SUB_TYPE TEXT", nullable: false),
                     Price = table.Column<decimal>(type: "DECIMAL(18,2)", nullable: false),
                     StockQuantity = table.Column<int>(type: "INTEGER", nullable: false),
@@ -91,9 +91,9 @@ namespace WebSiteBanHang.Migrations
                 {
                     UserId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Fb:ValueGenerationStrategy", FbValueGenerationStrategy.IdentityColumn),
-                    Username = table.Column<string>(type: "BLOB SUB_TYPE TEXT", nullable: false),
-                    Password = table.Column<string>(type: "BLOB SUB_TYPE TEXT", nullable: false),
-                    Email = table.Column<string>(type: "BLOB SUB_TYPE TEXT", nullable: false),
+                    Username = table.Column<string>(type: "VARCHAR(50)", maxLength: 50, nullable: false),
+                    Password = table.Column<string>(type: "VARCHAR(100)", maxLength: 100, nullable: false),
+                    Email = table.Column<string>(type: "VARCHAR(100)", maxLength: 100, nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "TIMESTAMP", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
                 },
@@ -209,17 +209,41 @@ namespace WebSiteBanHang.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "ProductCategories",
+                columns: table => new
+                {
+                    ProductId = table.Column<int>(type: "INTEGER", nullable: false),
+                    CategoryId = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ProductCategories", x => new { x.ProductId, x.CategoryId });
+                    table.ForeignKey(
+                        name: "FK_ProductCategories_Categorie~",
+                        column: x => x.CategoryId,
+                        principalTable: "Categories",
+                        principalColumn: "CategoryId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_ProductCategories_Products_~",
+                        column: x => x.ProductId,
+                        principalTable: "Products",
+                        principalColumn: "ProductId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Addresses",
                 columns: table => new
                 {
                     AddressId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Fb:ValueGenerationStrategy", FbValueGenerationStrategy.IdentityColumn),
                     UserId = table.Column<int>(type: "INTEGER", nullable: false),
-                    Street = table.Column<string>(type: "BLOB SUB_TYPE TEXT", nullable: false),
-                    City = table.Column<string>(type: "BLOB SUB_TYPE TEXT", nullable: false),
-                    State = table.Column<string>(type: "BLOB SUB_TYPE TEXT", nullable: false),
-                    ZipCode = table.Column<string>(type: "BLOB SUB_TYPE TEXT", nullable: false),
-                    Country = table.Column<string>(type: "BLOB SUB_TYPE TEXT", nullable: false),
+                    Street = table.Column<string>(type: "VARCHAR(200)", maxLength: 200, nullable: false),
+                    City = table.Column<string>(type: "VARCHAR(100)", maxLength: 100, nullable: false),
+                    State = table.Column<string>(type: "VARCHAR(100)", maxLength: 100, nullable: false),
+                    ZipCode = table.Column<string>(type: "VARCHAR(20)", maxLength: 20, nullable: false),
+                    Country = table.Column<string>(type: "VARCHAR(100)", maxLength: 100, nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "TIMESTAMP", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
                 },
@@ -242,7 +266,7 @@ namespace WebSiteBanHang.Migrations
                         .Annotation("Fb:ValueGenerationStrategy", FbValueGenerationStrategy.IdentityColumn),
                     UserId = table.Column<int>(type: "INTEGER", nullable: false),
                     TotalPrice = table.Column<decimal>(type: "DECIMAL(18,2)", nullable: false),
-                    Status = table.Column<string>(type: "BLOB SUB_TYPE TEXT", nullable: false),
+                    Status = table.Column<string>(type: "VARCHAR(50)", maxLength: 50, nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "TIMESTAMP", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
                 },
@@ -341,6 +365,11 @@ namespace WebSiteBanHang.Migrations
                 name: "IX_Orders_UserId",
                 table: "Orders",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ProductCategories_CategoryId",
+                table: "ProductCategories",
+                column: "CategoryId");
         }
 
         /// <inheritdoc />
@@ -365,10 +394,10 @@ namespace WebSiteBanHang.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Categories");
+                name: "OrderItems");
 
             migrationBuilder.DropTable(
-                name: "OrderItems");
+                name: "ProductCategories");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
@@ -378,6 +407,9 @@ namespace WebSiteBanHang.Migrations
 
             migrationBuilder.DropTable(
                 name: "Orders");
+
+            migrationBuilder.DropTable(
+                name: "Categories");
 
             migrationBuilder.DropTable(
                 name: "Products");

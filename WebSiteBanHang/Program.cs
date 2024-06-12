@@ -36,6 +36,31 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
+    name: "products",
+    pattern: "/products",
+    defaults: new { controller = "Products", action = "Index" });
+
+app.MapControllerRoute(
+    name: "categories",
+    pattern: "/categories",
+    defaults: new { controller = "Categories", action = "Index" });
+
+app.MapControllerRoute(
+    name: "orders",
+    pattern: "/orders",
+    defaults: new { controller = "Orders", action = "Index" });
+
+app.MapControllerRoute(
+    name: "orderItems",
+    pattern: "/orderItems",
+    defaults: new { controller = "OrderItems", action = "Index" });
+
+app.MapControllerRoute(
+    name: "addresses",
+    pattern: "/addresses",
+    defaults: new { controller = "Addresses", action = "Index" });
+
+app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 

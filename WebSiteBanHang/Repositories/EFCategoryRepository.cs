@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-using WebSiteBanHang.Interfaces;
+﻿using WebSiteBanHang.Interfaces;
 using WebSiteBanHang.Models;
 
-namespace WebSiteBanHang.Repositories {
+namespace WebSiteBanHang.Repositories
+{
     public class EFCategoryRepository : ICategoryRepository
     {
         private readonly ApplicationDbContext _context;

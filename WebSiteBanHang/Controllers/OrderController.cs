@@ -4,29 +4,29 @@ using WebSiteBanHang.Models;
 
 namespace WebSiteBanHang.Controllers
 {
-    public class CategoriesController : Controller
+    public class OrdersController : Controller
     {
-        private readonly ICategoryRepository _categoryRepository;
+        private readonly IOrderRepository _orderRepository;
 
-        public CategoriesController(ICategoryRepository categoryRepository)
+        public OrdersController(IOrderRepository orderRepository)
         {
-            _categoryRepository = categoryRepository;
+            _orderRepository = orderRepository;
         }
 
         public IActionResult Index()
         {
-            var categories = _categoryRepository.GetAllCategories();
-            return View(categories);
+            var orders = _orderRepository.GetAllOrders();
+            return View(orders);
         }
 
         public IActionResult Details(int id)
         {
-            var category = _categoryRepository.GetCategoryById(id);
-            if (category == null)
+            var order = _orderRepository.GetOrderById(id);
+            if (order == null)
             {
                 return NotFound();
             }
-            return View(category);
+            return View(order);
         }
 
         public IActionResult Create()
@@ -36,53 +36,53 @@ namespace WebSiteBanHang.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Category category)
+        public IActionResult Create(Order order)
         {
             if (ModelState.IsValid)
             {
-                _categoryRepository.AddCategory(category);
+                _orderRepository.AddOrder(order);
                 return RedirectToAction(nameof(Index));
             }
-            return View(category);
+            return View(order);
         }
 
         public IActionResult Edit(int id)
         {
-            var category = _categoryRepository.GetCategoryById(id);
-            if (category == null)
+            var order = _orderRepository.GetOrderById(id);
+            if (order == null)
             {
                 return NotFound();
             }
-            return View(category);
+            return View(order);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Category category)
+        public IActionResult Edit(Order order)
         {
             if (ModelState.IsValid)
             {
-                _categoryRepository.UpdateCategory(category);
+                _orderRepository.UpdateOrder(order);
                 return RedirectToAction(nameof(Index));
             }
-            return View(category);
+            return View(order);
         }
 
         public IActionResult Delete(int id)
         {
-            var category = _categoryRepository.GetCategoryById(id);
-            if (category == null)
+            var order = _orderRepository.GetOrderById(id);
+            if (order == null)
             {
                 return NotFound();
             }
-            return View(category);
+            return View(order);
         }
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int id)
         {
-            _categoryRepository.DeleteCategory(id);
+            _orderRepository.DeleteOrder(id);
             return RedirectToAction(nameof(Index));
         }
     }

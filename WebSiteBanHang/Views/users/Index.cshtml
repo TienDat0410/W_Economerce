@@ -1,0 +1,35 @@
+﻿@model IEnumerable<WebSiteBanHang.Models.User>
+
+@{
+    ViewData["Title"] = "Users";
+}
+
+<h1>Users</h1>
+
+<p>
+    <a href="@Url.Action("Create")">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Username</td>
+                <td>@item.Email</td>
+                <td>
+                    <a href="@Url.Action("Edit", new { id = item.UserId })">Edit</a> |
+                    <a href="@Url.Action("Details", new { id = item.UserId })">Details</a> |
+                    <a href="@Url.Action("Delete", new { id = item.UserId })">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

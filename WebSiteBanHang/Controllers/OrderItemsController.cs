@@ -4,29 +4,29 @@ using WebSiteBanHang.Models;
 
 namespace WebSiteBanHang.Controllers
 {
-    public class CategoriesController : Controller
+    public class OrderItemsController : Controller
     {
-        private readonly ICategoryRepository _categoryRepository;
+        private readonly IOrderItemRepository _orderItemRepository;
 
-        public CategoriesController(ICategoryRepository categoryRepository)
+        public OrderItemsController(IOrderItemRepository orderItemRepository)
         {
-            _categoryRepository = categoryRepository;
+            _orderItemRepository = orderItemRepository;
         }
 
         public IActionResult Index()
         {
-            var categories = _categoryRepository.GetAllCategories();
-            return View(categories);
+            var orderItems = _orderItemRepository.GetAllOrderItems();
+            return View(orderItems);
         }
 
         public IActionResult Details(int id)
         {
-            var category = _categoryRepository.GetCategoryById(id);
-            if (category == null)
+            var orderItem = _orderItemRepository.GetOrderItemById(id);
+            if (orderItem == null)
             {
                 return NotFound();
             }
-            return View(category);
+            return View(orderItem);
         }
 
         public IActionResult Create()
@@ -36,53 +36,53 @@ namespace WebSiteBanHang.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Category category)
+        public IActionResult Create(OrderItem orderItem)
         {
             if (ModelState.IsValid)
             {
-                _categoryRepository.AddCategory(category);
+                _orderItemRepository.AddOrderItem(orderItem);
                 return RedirectToAction(nameof(Index));
             }
-            return View(category);
+            return View(orderItem);
         }
 
         public IActionResult Edit(int id)
         {
-            var category = _categoryRepository.GetCategoryById(id);
-            if (category == null)
+            var orderItem = _orderItemRepository.GetOrderItemById(id);
+            if (orderItem == null)
             {
                 return NotFound();
             }
-            return View(category);
+            return View(orderItem);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Category category)
+        public IActionResult Edit(OrderItem orderItem)
         {
             if (ModelState.IsValid)
             {
-                _categoryRepository.UpdateCategory(category);
+                _orderItemRepository.UpdateOrderItem(orderItem);
                 return RedirectToAction(nameof(Index));
             }
-            return View(category);
+            return View(orderItem);
         }
 
         public IActionResult Delete(int id)
         {
-            var category = _categoryRepository.GetCategoryById(id);
-            if (category == null)
+            var orderItem = _orderItemRepository.GetOrderItemById(id);
+            if (orderItem == null)
             {
                 return NotFound();
             }
-            return View(category);
+            return View(orderItem);
         }
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int id)
         {
-            _categoryRepository.DeleteCategory(id);
+            _orderItemRepository.DeleteOrderItem(id);
             return RedirectToAction(nameof(Index));
         }
     }

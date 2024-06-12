@@ -5,8 +5,10 @@ using WebSiteBanHang.Models;
 
 namespace WebSiteBanHang.Models
 {
-    public class ApplicationDbContext : IdentityDbContext<IdentityUser> {
+    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
+    {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
+
         public DbSet<User> Users { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
@@ -19,79 +21,18 @@ namespace WebSiteBanHang.Models
         {
             base.OnModelCreating(modelBuilder);
 
-            // Configure User entity
-            modelBuilder.Entity<User>(entity =>
-            {
-                entity.HasKey(e => e.UserId);
+            modelBuilder.Entity<ProductCategory>()
+                .HasKey(pc => new { pc.ProductId, pc.CategoryId });
 
-                entity.Property(e => e.Username)
-                    .IsRequired()
-                    .HasMaxLength(100);
+            modelBuilder.Entity<ProductCategory>()
+                .HasOne(pc => pc.Product)
+                .WithMany(p => p.ProductCategories)
+                .HasForeignKey(pc => pc.ProductId);
 
-                entity.Property(e => e.Email)
-                    .IsRequired()
-                    .HasMaxLength(100);
-            });
-
-            // Configure Product entity
-            modelBuilder.Entity<Product>(entity =>
-            {
-                entity.HasKey(e => e.ProductId);
-
-                entity.Property(e => e.Name)
-                    .IsRequired()
-                    .HasMaxLength(200);
-
-                entity.Property(e => e.Price)
-                    .HasColumnType("decimal(18,2)");
-            });
-
-            // Configure Category entity
-            modelBuilder.Entity<Category>(entity =>
-            {
-                entity.HasKey(e => e.CategoryId);
-
-                entity.Property(e => e.Name)
-                    .IsRequired()
-                    .HasMaxLength(100);
-            });
-
-            // Configure Order entity
-            modelBuilder.Entity<Order>(entity =>
-            {
-                entity.HasKey(e => e.OrderId);
-
-                entity.HasOne(e => e.User)
-                    .WithMany(u => u.Orders)
-                    .HasForeignKey(e => e.UserId)
-                    .OnDelete(DeleteBehavior.Cascade);
-
-                entity.Property(e => e.OrderDate)
-                    .IsRequired();
-            });
-
-            // Configure Address entity
-            modelBuilder.Entity<Address>(entity =>
-            {
-                entity.HasKey(e => e.AddressId);
-
-                entity.Property(e => e.Street)
-                    .IsRequired()
-                    .HasMaxLength(200);
-
-                entity.Property(e => e.City)
-                    .IsRequired()
-                    .HasMaxLength(100);
-
-                entity.Property(e => e.ZipCode)
-                    .IsRequired()
-                    .HasMaxLength(20);
-
-                entity.HasOne(e => e.User)
-                    .WithMany(u => u.Addresses)
-                    .HasForeignKey(e => e.UserId)
-                    .OnDelete(DeleteBehavior.Cascade);
-            });
+            modelBuilder.Entity<ProductCategory>()
+                .HasOne(pc => pc.Category)
+                .WithMany(c => c.ProductCategories)
+                .HasForeignKey(pc => pc.CategoryId);
         }
     }
-}
+    }

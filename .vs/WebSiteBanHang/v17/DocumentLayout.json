@@ -1,74 +1,234 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\",
+  "WorkspaceRootPath": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|c:\\users\\tiendat\\downloads\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|c:\\users\\tiendat\\downloads\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|c:\\users\\tiendat\\downloads\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|c:\\users\\tiendat\\downloads\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|c:\\users\\tiendat\\downloads\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|c:\\users\\tiendat\\downloads\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|c:\\users\\tiendat\\downloads\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\models\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\models\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|c:\\users\\tiendat\\downloads\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\repositories\\efproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\repositories\\efproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|c:\\users\\tiendat\\downloads\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|c:\\users\\tiendat\\downloads\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|c:\\users\\tiendat\\downloads\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|c:\\users\\tiendat\\downloads\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|c:\\users\\tiendat\\downloads\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|c:\\users\\tiendat\\downloads\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|c:\\users\\tiendat\\downloads\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\repositories\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\repositories\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|c:\\users\\tiendat\\downloads\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\interfaces\\iproductrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\models\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\models\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\repositories\\efproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\repositories\\efproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\areas\\identity\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\areas\\identity\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\areas\\identity\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\areas\\identity\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\areas\\identity\\pages\\account\\manage\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\areas\\identity\\pages\\account\\manage\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\areas\\identity\\pages\\account\\_statusmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\areas\\identity\\pages\\account\\_statusmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\areas\\identity\\pages\\account\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\areas\\identity\\pages\\account\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\properties\\servicedependencies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\properties\\servicedependencies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\repositories\\eforderitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\repositories\\eforderitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\interfaces\\iorderitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\interfaces\\iorderitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\interfaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\interfaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\controllers\\addressescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\controllers\\addressescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\controllers\\orderitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\controllers\\orderitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\interfaces\\iproductrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\interfaces\\iproductrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|c:\\users\\tiendat\\downloads\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\repositories\\efaddressrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\repositories\\efaddressrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\repositories\\eforderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\repositories\\eforderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\repositories\\efproductcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\repositories\\efproductcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\repositories\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\repositories\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\repositories\\efuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\repositories\\efuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\interfaces\\iaddressrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\interfaces\\iaddressrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\interfaces\\iproductcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\interfaces\\iproductcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|d:\\thacsy\\cachecsdl\\websitebanhangchinh\\websitebanhang\\websitebanhang\\websitebanhang\\websitebanhang\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FFDB3ED9-2A63-4210-B8CF-D39570B24FD1}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,7 +238,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,39 +258,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Address.cs",
-              "DocumentMoniker": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\Address.cs",
-              "RelativeDocumentMoniker": "WebSiteBanHang\\Models\\Address.cs",
-              "ToolTip": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\Address.cs",
-              "RelativeToolTip": "WebSiteBanHang\\Models\\Address.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAA1wA8AAAApAAAA",
+              "DocumentIndex": 6,
+              "Title": "ProductCategory.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\ProductCategory.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Models\\ProductCategory.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\ProductCategory.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Models\\ProductCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T09:51:54.204Z",
+              "WhenOpened": "2024-06-10T15:59:50.653Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "WebSiteBanHang\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\Product.cs",
-              "RelativeToolTip": "WebSiteBanHang\\Models\\Product.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAqAAAA",
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Models\\Order.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\Order.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T09:38:35.557Z",
+              "WhenOpened": "2024-06-11T15:21:15.699Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "OrderItem.cs",
-              "DocumentMoniker": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\OrderItem.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\OrderItem.cs",
               "RelativeDocumentMoniker": "WebSiteBanHang\\Models\\OrderItem.cs",
-              "ToolTip": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\OrderItem.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\OrderItem.cs",
               "RelativeToolTip": "WebSiteBanHang\\Models\\OrderItem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T09:51:33.397Z",
               "EditorCaption": ""
@@ -139,63 +299,128 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "WebSiteBanHang\\Models\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\ApplicationDbContext.cs",
               "RelativeToolTip": "WebSiteBanHang\\Models\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAowCIAAAAAAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAwwCYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T09:22:05.633Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProductCategory.cs",
-              "DocumentMoniker": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\ProductCategory.cs",
-              "RelativeDocumentMoniker": "WebSiteBanHang\\Models\\ProductCategory.cs",
-              "ToolTip": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\ProductCategory.cs",
-              "RelativeToolTip": "WebSiteBanHang\\Models\\ProductCategory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T15:59:50.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Users.cs",
-              "DocumentMoniker": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\Users.cs",
-              "RelativeDocumentMoniker": "WebSiteBanHang\\Models\\Users.cs",
-              "ToolTip": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\Users.cs",
-              "RelativeToolTip": "WebSiteBanHang\\Models\\Users.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAADgvy4AAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T09:38:29.863Z",
+              "WhenOpened": "2024-06-09T14:49:47.455Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\Category.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\Category.cs",
               "RelativeDocumentMoniker": "WebSiteBanHang\\Models\\Category.cs",
-              "ToolTip": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\Category.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\Category.cs",
               "RelativeToolTip": "WebSiteBanHang\\Models\\Category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T15:27:18.329Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Address.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\Address.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Models\\Address.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\Address.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Models\\Address.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAmwCYAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T09:51:54.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Models\\Product.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\Product.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Models\\Product.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwB8AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T09:38:35.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Models\\Users.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Models\\Users.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Models\\Users.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T09:38:29.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAIwFkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T15:51:45.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Views\\Products\\Index.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Views\\Products\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T17:11:40.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T15:06:15.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "EFProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Repositories\\EFProductRepository.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Repositories\\EFProductRepository.cs",
               "RelativeDocumentMoniker": "WebSiteBanHang\\Repositories\\EFProductRepository.cs",
-              "ToolTip": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Repositories\\EFProductRepository.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Repositories\\EFProductRepository.cs",
               "RelativeToolTip": "WebSiteBanHang\\Repositories\\EFProductRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAEAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwDcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T15:12:33.471Z",
               "EditorCaption": ""
@@ -203,112 +428,564 @@
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebSiteBanHang\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebSiteBanHang\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\Products\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Views\\Products\\Create.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\Products\\Create.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Views\\Products\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-09T17:10:50.773Z"
+              "WhenOpened": "2024-06-12T17:33:28.947Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Program.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Program.cs",
               "RelativeDocumentMoniker": "WebSiteBanHang\\Program.cs",
-              "ToolTip": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Program.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Program.cs",
               "RelativeToolTip": "WebSiteBanHang\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAcAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAIwCwAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T10:01:04.235Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebSiteBanHang\\Views\\Product\\Index.cshtml",
-              "ToolTip": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "WebSiteBanHang\\Views\\Product\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAMAAAA",
+              "DocumentIndex": 14,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\Products\\Details.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Views\\Products\\Details.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\Products\\Details.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Views\\Products\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-09T17:10:56.874Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\appsettings.json",
-              "RelativeDocumentMoniker": "WebSiteBanHang\\appsettings.json",
-              "ToolTip": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\appsettings.json",
-              "RelativeToolTip": "WebSiteBanHang\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-10T15:18:18.869Z",
+              "WhenOpened": "2024-06-12T17:34:52.218Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "WebSiteBanHang\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "WebSiteBanHang\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAAF8AAAAAAAAAAAAAwGYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T15:51:45.622Z"
+              "DocumentIndex": 16,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\Products\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Views\\Products\\Edit.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\Products\\Edit.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Views\\Products\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T17:33:51.747Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "WebSiteBanHang\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "WebSiteBanHang\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFkAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T14:49:47.455Z"
+              "DocumentIndex": 15,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\Products\\Delete.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Views\\Products\\Delete.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\Products\\Delete.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Views\\Products\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T17:34:29.208Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T15:42:04.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Areas\\Identity\\Pages\\Error.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\Error.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Areas\\Identity\\Pages\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T16:59:02.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T16:38:59.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_ManageNav.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T16:58:30.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T16:58:44.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T16:58:50.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T15:42:01.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T16:58:19.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_StatusMessage.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T16:58:08.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T16:58:06.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "serviceDependencies.json",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Properties\\serviceDependencies.json",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Properties\\serviceDependencies.json",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Properties\\serviceDependencies.json",
+              "RelativeToolTip": "WebSiteBanHang\\Properties\\serviceDependencies.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-12T16:57:49.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebSiteBanHang\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-12T16:57:31.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T16:57:20.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T15:38:10.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T17:10:50.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T15:42:11.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T15:42:06.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Views\\Category\\Index.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Views\\Category\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T15:41:34.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\users\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Views\\users\\Create.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\users\\Create.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Views\\users\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T15:39:05.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\users\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Views\\users\\Edit.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\users\\Edit.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Views\\users\\Edit.cshtml",
+              "ViewState": "AQIAABMAAAAAAAAAAADwvx8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T15:39:31.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\users\\Delete.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Views\\users\\Delete.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\users\\Delete.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Views\\users\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T15:39:53.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\users\\Details.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Views\\users\\Details.cshtml",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Views\\users\\Details.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Views\\users\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T15:28:11.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Interfaces\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Interfaces\\IOrderRepository.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Interfaces\\IOrderRepository.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Interfaces\\IOrderRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T16:23:20.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "EFOrderItemRepository.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Repositories\\EFOrderItemRepository.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Repositories\\EFOrderItemRepository.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Repositories\\EFOrderItemRepository.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Repositories\\EFOrderItemRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T16:30:59.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T16:38:16.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IOrderItemRepository.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Interfaces\\IOrderItemRepository.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Interfaces\\IOrderItemRepository.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Interfaces\\IOrderItemRepository.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Interfaces\\IOrderItemRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T16:23:55.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "AddressesController.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Controllers\\AddressesController.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Controllers\\AddressesController.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Controllers\\AddressesController.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Controllers\\AddressesController.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAcwFkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T14:56:26.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "OrderItemsController.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Controllers\\OrderItemsController.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Controllers\\OrderItemsController.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Controllers\\OrderItemsController.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Controllers\\OrderItemsController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAAEUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T14:56:03.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "IProductRepository .cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Interfaces\\IProductRepository .cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Interfaces\\IProductRepository .cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Interfaces\\IProductRepository .cs",
+              "RelativeToolTip": "WebSiteBanHang\\Interfaces\\IProductRepository .cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T15:48:14.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "EFAddressRepository.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Repositories\\EFAddressRepository.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Repositories\\EFAddressRepository.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Repositories\\EFAddressRepository.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Repositories\\EFAddressRepository.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAcwDAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T16:31:33.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "EFOrderRepository.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Repositories\\EFOrderRepository.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Repositories\\EFOrderRepository.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Repositories\\EFOrderRepository.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Repositories\\EFOrderRepository.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAIwCMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T16:30:45.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "EFProductCategoryRepository.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Repositories\\EFProductCategoryRepository.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Repositories\\EFProductCategoryRepository.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Repositories\\EFProductCategoryRepository.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Repositories\\EFProductCategoryRepository.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAIwB8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T16:30:30.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "EFUserRepository.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Repositories\\EFUserRepository.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Repositories\\EFUserRepository.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Repositories\\EFUserRepository.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Repositories\\EFUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T16:26:20.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "IAddressRepository.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Interfaces\\IAddressRepository.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Interfaces\\IAddressRepository.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Interfaces\\IAddressRepository.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Interfaces\\IAddressRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T16:24:08.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
               "Title": "EFCategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Repositories\\EFCategoryRepository.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Repositories\\EFCategoryRepository.cs",
               "RelativeDocumentMoniker": "WebSiteBanHang\\Repositories\\EFCategoryRepository.cs",
-              "ToolTip": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Repositories\\EFCategoryRepository.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Repositories\\EFCategoryRepository.cs",
               "RelativeToolTip": "WebSiteBanHang\\Repositories\\EFCategoryRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAnAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAIwCAAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T15:12:47.657Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IProductRepository .cs",
-              "DocumentMoniker": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Interfaces\\IProductRepository .cs",
-              "RelativeDocumentMoniker": "WebSiteBanHang\\Interfaces\\IProductRepository .cs",
-              "ToolTip": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Interfaces\\IProductRepository .cs",
-              "RelativeToolTip": "WebSiteBanHang\\Interfaces\\IProductRepository .cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
+              "DocumentIndex": 53,
+              "Title": "IProductCategoryRepository.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Interfaces\\IProductCategoryRepository.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Interfaces\\IProductCategoryRepository.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Interfaces\\IProductCategoryRepository.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Interfaces\\IProductCategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T15:48:14.706Z"
+              "WhenOpened": "2024-06-11T16:23:03.477Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 54,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T16:22:36.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
               "Title": "ICategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Interfaces\\ICategoryRepository.cs",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Interfaces\\ICategoryRepository.cs",
               "RelativeDocumentMoniker": "WebSiteBanHang\\Interfaces\\ICategoryRepository.cs",
-              "ToolTip": "C:\\Users\\TienDat\\Downloads\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Interfaces\\ICategoryRepository.cs",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\Interfaces\\ICategoryRepository.cs",
               "RelativeToolTip": "WebSiteBanHang\\Interfaces\\ICategoryRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T10:08:40.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\appsettings.json",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\appsettings.json",
+              "ToolTip": "D:\\ThacSy\\CacHeCSDL\\WebsiteBanHangchinh\\WebsiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\WebSiteBanHang\\appsettings.json",
+              "RelativeToolTip": "WebSiteBanHang\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-10T15:18:18.869Z"
             }
           ]
         }

@@ -4,29 +4,29 @@ using WebSiteBanHang.Models;
 
 namespace WebSiteBanHang.Controllers
 {
-    public class CategoriesController : Controller
+    public class AddressesController : Controller
     {
-        private readonly ICategoryRepository _categoryRepository;
+        private readonly IAddressRepository _addressRepository;
 
-        public CategoriesController(ICategoryRepository categoryRepository)
+        public AddressesController(IAddressRepository addressRepository)
         {
-            _categoryRepository = categoryRepository;
+            _addressRepository = addressRepository;
         }
 
         public IActionResult Index()
         {
-            var categories = _categoryRepository.GetAllCategories();
-            return View(categories);
+            var addresses = _addressRepository.GetAllAddresses();
+            return View(addresses);
         }
 
         public IActionResult Details(int id)
         {
-            var category = _categoryRepository.GetCategoryById(id);
-            if (category == null)
+            var address = _addressRepository.GetAddressById(id);
+            if (address == null)
             {
                 return NotFound();
             }
-            return View(category);
+            return View(address);
         }
 
         public IActionResult Create()
@@ -36,53 +36,53 @@ namespace WebSiteBanHang.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Category category)
+        public IActionResult Create(Address address)
         {
             if (ModelState.IsValid)
             {
-                _categoryRepository.AddCategory(category);
+                _addressRepository.AddAddress(address);
                 return RedirectToAction(nameof(Index));
             }
-            return View(category);
+            return View(address);
         }
 
         public IActionResult Edit(int id)
         {
-            var category = _categoryRepository.GetCategoryById(id);
-            if (category == null)
+            var address = _addressRepository.GetAddressById(id);
+            if (address == null)
             {
                 return NotFound();
             }
-            return View(category);
+            return View(address);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Category category)
+        public IActionResult Edit(Address address)
         {
             if (ModelState.IsValid)
             {
-                _categoryRepository.UpdateCategory(category);
+                _addressRepository.UpdateAddress(address);
                 return RedirectToAction(nameof(Index));
             }
-            return View(category);
+            return View(address);
         }
 
         public IActionResult Delete(int id)
         {
-            var category = _categoryRepository.GetCategoryById(id);
-            if (category == null)
+            var address = _addressRepository.GetAddressById(id);
+            if (address == null)
             {
                 return NotFound();
             }
-            return View(category);
+            return View(address);
         }
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int id)
         {
-            _categoryRepository.DeleteCategory(id);
+            _addressRepository.DeleteAddress(id);
             return RedirectToAction(nameof(Index));
         }
     }

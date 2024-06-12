@@ -228,22 +228,26 @@ namespace WebSiteBanHang.Migrations
 
                     b.Property<string>("City")
                         .IsRequired()
-                        .HasColumnType("BLOB SUB_TYPE TEXT");
+                        .HasMaxLength(100)
+                        .HasColumnType("VARCHAR(100)");
 
                     b.Property<string>("Country")
                         .IsRequired()
-                        .HasColumnType("BLOB SUB_TYPE TEXT");
+                        .HasMaxLength(100)
+                        .HasColumnType("VARCHAR(100)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("State")
                         .IsRequired()
-                        .HasColumnType("BLOB SUB_TYPE TEXT");
+                        .HasMaxLength(100)
+                        .HasColumnType("VARCHAR(100)");
 
                     b.Property<string>("Street")
                         .IsRequired()
-                        .HasColumnType("BLOB SUB_TYPE TEXT");
+                        .HasMaxLength(200)
+                        .HasColumnType("VARCHAR(200)");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("TIMESTAMP");
@@ -253,7 +257,8 @@ namespace WebSiteBanHang.Migrations
 
                     b.Property<string>("ZipCode")
                         .IsRequired()
-                        .HasColumnType("BLOB SUB_TYPE TEXT");
+                        .HasMaxLength(20)
+                        .HasColumnType("VARCHAR(20)");
 
                     b.HasKey("AddressId");
 
@@ -278,7 +283,8 @@ namespace WebSiteBanHang.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("BLOB SUB_TYPE TEXT");
+                        .HasMaxLength(100)
+                        .HasColumnType("VARCHAR(100)");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("TIMESTAMP");
@@ -300,7 +306,8 @@ namespace WebSiteBanHang.Migrations
 
                     b.Property<string>("Status")
                         .IsRequired()
-                        .HasColumnType("BLOB SUB_TYPE TEXT");
+                        .HasMaxLength(50)
+                        .HasColumnType("VARCHAR(50)");
 
                     b.Property<decimal>("TotalPrice")
                         .HasColumnType("DECIMAL(18,2)");
@@ -362,7 +369,8 @@ namespace WebSiteBanHang.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("BLOB SUB_TYPE TEXT");
+                        .HasMaxLength(100)
+                        .HasColumnType("VARCHAR(100)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("DECIMAL(18,2)");
@@ -378,7 +386,24 @@ namespace WebSiteBanHang.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("WebSiteBanHang.Models.Users", b =>
+            modelBuilder.Entity("WebSiteBanHang.Models.ProductCategory", b =>
+                {
+                    b.Property<int>("ProductId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnOrder(0);
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnOrder(1);
+
+                    b.HasKey("ProductId", "CategoryId");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("ProductCategories");
+                });
+
+            modelBuilder.Entity("WebSiteBanHang.Models.User", b =>
                 {
                     b.Property<int>("UserId")
                         .ValueGeneratedOnAdd()
@@ -390,18 +415,21 @@ namespace WebSiteBanHang.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("BLOB SUB_TYPE TEXT");
+                        .HasMaxLength(100)
+                        .HasColumnType("VARCHAR(100)");
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasColumnType("BLOB SUB_TYPE TEXT");
+                        .HasMaxLength(100)
+                        .HasColumnType("VARCHAR(100)");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Username")
                         .IsRequired()
-                        .HasColumnType("BLOB SUB_TYPE TEXT");
+                        .HasMaxLength(50)
+                        .HasColumnType("VARCHAR(50)");
 
                     b.HasKey("UserId");
 
@@ -461,8 +489,8 @@ namespace WebSiteBanHang.Migrations
 
             modelBuilder.Entity("WebSiteBanHang.Models.Address", b =>
                 {
-                    b.HasOne("WebSiteBanHang.Models.Users", "User")
-                        .WithMany()
+                    b.HasOne("WebSiteBanHang.Models.User", "User")
+                        .WithMany("Addresses")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -472,8 +500,8 @@ namespace WebSiteBanHang.Migrations
 
             modelBuilder.Entity("WebSiteBanHang.Models.Order", b =>
                 {
-                    b.HasOne("WebSiteBanHang.Models.Users", "User")
-                        .WithMany()
+                    b.HasOne("WebSiteBanHang.Models.User", "User")
+                        .WithMany("Orders")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -484,13 +512,13 @@ namespace WebSiteBanHang.Migrations
             modelBuilder.Entity("WebSiteBanHang.Models.OrderItem", b =>
                 {
                     b.HasOne("WebSiteBanHang.Models.Order", "Order")
-                        .WithMany()
+                        .WithMany("OrderItems")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("WebSiteBanHang.Models.Product", "Product")
-                        .WithMany()
+                        .WithMany("OrderItems")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -498,6 +526,49 @@ namespace WebSiteBanHang.Migrations
                     b.Navigation("Order");
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("WebSiteBanHang.Models.ProductCategory", b =>
+                {
+                    b.HasOne("WebSiteBanHang.Models.Category", "Category")
+                        .WithMany("ProductCategories")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebSiteBanHang.Models.Product", "Product")
+                        .WithMany("ProductCategories")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("WebSiteBanHang.Models.Category", b =>
+                {
+                    b.Navigation("ProductCategories");
+                });
+
+            modelBuilder.Entity("WebSiteBanHang.Models.Order", b =>
+                {
+                    b.Navigation("OrderItems");
+                });
+
+            modelBuilder.Entity("WebSiteBanHang.Models.Product", b =>
+                {
+                    b.Navigation("OrderItems");
+
+                    b.Navigation("ProductCategories");
+                });
+
+            modelBuilder.Entity("WebSiteBanHang.Models.User", b =>
+                {
+                    b.Navigation("Addresses");
+
+                    b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618
         }
