@@ -1,5 +1,6 @@
 ﻿using WebSiteBanHang.Interfaces;
 using WebSiteBanHang.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebSiteBanHang.Repositories
 {
@@ -12,43 +13,37 @@ namespace WebSiteBanHang.Repositories
             _context = context;
         }
 
-        public IEnumerable<Product> GetAllProducts()
+        public async Task<IEnumerable<Product>> GetAllProductsAsync()
         {
-            return _context.Products.ToList();
+            return await _context.Products.Include(p => p.Category).ToListAsync();
         }
 
-        public Product GetProductById(int productId)
+        public async Task<Product> GetProductByIdAsync(int productId)
         {
-            return _context.Products.Find(productId);
+            return await _context.Products.Include(p => p.Category)
+                                             .FirstOrDefaultAsync(p => p.ProductId == productId);
         }
 
-        public void AddProduct(Product product)
+
+        public async Task AddProductAsync(Product product)
         {
-            try
-            {
-                _context.Products.Add(product);
-                _context.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error occurred while adding product: " + ex.Message);
-                throw; // Re-throw exception để gửi về controller xử lý
-            }
+            _context.Products.Add(product);
+            await _context.SaveChangesAsync();
         }
 
-        public void UpdateProduct(Product product)
+        public async Task UpdateProductAsync(Product product)
         {
             _context.Products.Update(product);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
-        public void DeleteProduct(int productId)
+        public async Task DeleteProductAsync(int productId)
         {
-            var product = _context.Products.Find(productId);
+            var product = await _context.Products.FindAsync(productId);
             if (product != null)
             {
                 _context.Products.Remove(product);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
         }
     }

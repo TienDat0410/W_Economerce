@@ -12,7 +12,6 @@ namespace WebSiteBanHang.Models
         public DbSet<User> Users { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
-        public DbSet<ProductCategory> ProductCategories { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Address> Addresses { get; set; }
@@ -21,96 +20,36 @@ namespace WebSiteBanHang.Models
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<ProductCategory>()
-                .HasKey(pc => new { pc.ProductId, pc.CategoryId });
+            // Configure Category - Production relationships
+            modelBuilder.Entity<Category>()
+                .HasMany(c => c.Productions)
+                .WithOne(p => p.Category)
+                .HasForeignKey(p => p.CategoryId);
+            // Configure Order relationships
+            modelBuilder.Entity<Order>()
+                .HasOne(o => o.User)
+                .WithMany(u => u.Orders)
+                .HasForeignKey(o => o.UserId);
 
-            modelBuilder.Entity<ProductCategory>()
-                .HasOne(pc => pc.Product)
-                .WithMany(p => p.ProductCategories)
-                .HasForeignKey(pc => pc.ProductId);
+            // Configure OrderItem relationships
+            modelBuilder.Entity<OrderItem>()
+                .HasKey(oi => new { oi.OrderId, oi.ProductId });
 
-<<<<<<< HEAD
-            modelBuilder.Entity<ProductCategory>()
-                .HasOne(pc => pc.Category)
-                .WithMany(c => c.ProductCategories)
-                .HasForeignKey(pc => pc.CategoryId);
-=======
-                entity.HasOne(e => e.User)
-                    .WithMany(u => u.Orders)
-                    .HasForeignKey(e => e.UserId)
-                    .OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<OrderItem>()
+                .HasOne(oi => oi.Order)
+                .WithMany(o => o.OrderItems)
+                .HasForeignKey(oi => oi.OrderId);
 
-                entity.Property(e => e.OrderDate)
-                    .IsRequired();
-            });
+            modelBuilder.Entity<OrderItem>()
+                .HasOne(oi => oi.Product)
+                .WithMany(p => p.OrderItems)
+                .HasForeignKey(oi => oi.ProductId);
 
-            // Configure Address entity
-            modelBuilder.Entity<Address>(entity =>
-            {
-                entity.HasKey(e => e.AddressId);
-
-                entity.Property(e => e.Street)
-                    .IsRequired()
-                    .HasMaxLength(200);
-
-                entity.Property(e => e.City)
-                    .IsRequired()
-                    .HasMaxLength(100);
-
-                entity.Property(e => e.ZipCode)
-                    .IsRequired()
-                    .HasMaxLength(20);
-
-                entity.HasOne(e => e.User)
-                    .WithMany(u => u.Addresses)
-                    .HasForeignKey(e => e.UserId)
-                    .OnDelete(DeleteBehavior.Cascade);
-            });
-
-            // Configure OrderItem entity
-            modelBuilder.Entity<OrderItem>(entity =>
-            {
-                entity.HasKey(e => e.OrderItemId);
-
-                entity.HasOne(e => e.Order)
-                    .WithMany(o => o.OrderItems)
-                    .HasForeignKey(e => e.OrderId)
-                    .OnDelete(DeleteBehavior.Cascade);
-
-                entity.HasOne(e => e.Product)
-                    .WithMany(p => p.OrderItems)
-                    .HasForeignKey(e => e.ProductId)
-                    .OnDelete(DeleteBehavior.Cascade);
-
-                entity.Property(e => e.Price)
-                    .HasColumnType("decimal(18,2)");
-            });
-
-            // Configure ProductCategory entity
-            modelBuilder.Entity<ProductCategory>(entity =>
-            {
-                entity.HasKey(e => e.ProductCategoryId);
-
-                entity.Property(e => e.CategoryId)
-                    .IsRequired()
-                    .HasMaxLength(100);
-
-             /*   entity.HasMany(e => e.Product.Name.ToString())
-                    .WithMany(p => p.ProductCategories)
-                    .UsingEntity<Dictionary<string, object>>(
-                        "ProductProductCategory",
-                        j => j
-                            .HasOne<Product>()
-                            .WithMany()
-                            .HasForeignKey("ProductId")
-                            .OnDelete(DeleteBehavior.Cascade),
-                        j => j
-                            .HasOne<ProductCategory>()
-                            .WithMany()
-                            .HasForeignKey("ProductCategoryId")
-                            .OnDelete(DeleteBehavior.Cascade));*/
-            });
->>>>>>> cb233e311d832e59174e10df733f5b61776fd36d
+            // Configure Address relationships
+            modelBuilder.Entity<Address>()
+                .HasOne(a => a.User)
+                .WithMany(u => u.Addresses)
+                .HasForeignKey(a => a.UserId);
         }
     }
-    }
+}

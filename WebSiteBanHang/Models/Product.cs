@@ -11,9 +11,13 @@ namespace WebSiteBanHang.Models
         [Key]
         public int ProductId { get; set; }
 
+        [ForeignKey("Category")]
         [Required]
-        [StringLength(100)]
-        public string Name { get; set; }
+        public int CategoryId { get; set; }
+
+        [Required]
+        [StringLength(200)]
+        public string ProductName { get; set; }
 
         public string Description { get; set; }
 
@@ -28,8 +32,8 @@ namespace WebSiteBanHang.Models
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
-        public ICollection<ProductCategory> ProductCategories { get; set; }
+        public Category Category { get; set; }
         public ICollection<OrderItem> OrderItems { get; set; }
     }
 
-    }
+}

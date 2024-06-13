@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using WebSiteBanHang.Interfaces;
 using WebSiteBanHang.Models;
 
@@ -13,77 +14,128 @@ namespace WebSiteBanHang.Controllers
             _categoryRepository = categoryRepository;
         }
 
-        public IActionResult Index()
+        // GET: Categories
+        public async Task<IActionResult> Index()
         {
-            var categories = _categoryRepository.GetAllCategories();
+            var categories = await _categoryRepository.GetAllCategoriesAsync();
             return View(categories);
         }
 
-        public IActionResult Details(int id)
+        // GET: Categories/Details/5
+        public async Task<IActionResult> Details(int? id)
         {
-            var category = _categoryRepository.GetCategoryById(id);
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var category = await _categoryRepository.GetCategoryByIdAsync(id.Value);
             if (category == null)
             {
                 return NotFound();
             }
+
             return View(category);
         }
 
+        // GET: Categories/Create
         public IActionResult Create()
         {
             return View();
         }
 
+        // POST: Categories/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Category category)
+        public async Task<IActionResult> Create([Bind("CategoryId,Name,Description")] Category category)
         {
             if (ModelState.IsValid)
             {
-                _categoryRepository.AddCategory(category);
+                await _categoryRepository.AddCategoryAsync(category);
                 return RedirectToAction(nameof(Index));
             }
             return View(category);
         }
 
-        public IActionResult Edit(int id)
+        // GET: Categories/Edit/5
+        public async Task<IActionResult> Edit(int? id)
         {
-            var category = _categoryRepository.GetCategoryById(id);
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var category = await _categoryRepository.GetCategoryByIdAsync(id.Value);
             if (category == null)
             {
                 return NotFound();
             }
+
             return View(category);
         }
 
+        // POST: Categories/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Category category)
+        public async Task<IActionResult> Edit(int id, [Bind("CategoryId,Name,Description")] Category category)
         {
+            if (id != category.CategoryId)
+            {
+                return NotFound();
+            }
+
             if (ModelState.IsValid)
             {
-                _categoryRepository.UpdateCategory(category);
+                try
+                {
+                    await _categoryRepository.UpdateCategoryAsync(category);
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!await CategoryExists(category.CategoryId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
                 return RedirectToAction(nameof(Index));
             }
             return View(category);
         }
 
-        public IActionResult Delete(int id)
+        // GET: Categories/Delete/5
+        public async Task<IActionResult> Delete(int? id)
         {
-            var category = _categoryRepository.GetCategoryById(id);
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var category = await _categoryRepository.GetCategoryByIdAsync(id.Value);
             if (category == null)
             {
                 return NotFound();
             }
+
             return View(category);
         }
 
+        // POST: Categories/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public IActionResult DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            _categoryRepository.DeleteCategory(id);
+            await _categoryRepository.DeleteCategoryAsync(id);
             return RedirectToAction(nameof(Index));
+        }
+
+        private async Task<bool> CategoryExists(int id)
+        {
+           var category = await _categoryRepository.GetCategoryByIdAsync(id);
+            return category != null;
         }
     }
 }

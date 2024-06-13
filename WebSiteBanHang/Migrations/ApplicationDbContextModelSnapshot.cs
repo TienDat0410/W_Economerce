@@ -327,26 +327,22 @@ namespace WebSiteBanHang.Migrations
 
             modelBuilder.Entity("WebSiteBanHang.Models.OrderItem", b =>
                 {
-                    b.Property<int>("OrderItemId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER")
-                        .HasAnnotation("Fb:ValueGenerationStrategy", FbValueGenerationStrategy.IdentityColumn);
-
                     b.Property<int>("OrderId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("OrderItemId")
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("DECIMAL(18,2)");
 
-                    b.Property<int>("ProductId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<int>("Quantity")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("OrderItemId");
-
-                    b.HasIndex("OrderId");
+                    b.HasKey("OrderId", "ProductId");
 
                     b.HasIndex("ProductId");
 
@@ -360,6 +356,9 @@ namespace WebSiteBanHang.Migrations
                         .HasColumnType("INTEGER")
                         .HasAnnotation("Fb:ValueGenerationStrategy", FbValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("TIMESTAMP");
 
@@ -367,13 +366,13 @@ namespace WebSiteBanHang.Migrations
                         .IsRequired()
                         .HasColumnType("BLOB SUB_TYPE TEXT");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("VARCHAR(100)");
-
                     b.Property<decimal>("Price")
                         .HasColumnType("DECIMAL(18,2)");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("VARCHAR(200)");
 
                     b.Property<int>("StockQuantity")
                         .HasColumnType("INTEGER");
@@ -383,24 +382,9 @@ namespace WebSiteBanHang.Migrations
 
                     b.HasKey("ProductId");
 
-                    b.ToTable("Products");
-                });
-
-            modelBuilder.Entity("WebSiteBanHang.Models.ProductCategory", b =>
-                {
-                    b.Property<int>("ProductId")
-                        .HasColumnType("INTEGER")
-                        .HasColumnOrder(0);
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("INTEGER")
-                        .HasColumnOrder(1);
-
-                    b.HasKey("ProductId", "CategoryId");
-
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("ProductCategories");
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("WebSiteBanHang.Models.User", b =>
@@ -528,28 +512,20 @@ namespace WebSiteBanHang.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("WebSiteBanHang.Models.ProductCategory", b =>
+            modelBuilder.Entity("WebSiteBanHang.Models.Product", b =>
                 {
                     b.HasOne("WebSiteBanHang.Models.Category", "Category")
-                        .WithMany("ProductCategories")
+                        .WithMany("Productions")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("WebSiteBanHang.Models.Product", "Product")
-                        .WithMany("ProductCategories")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Category");
-
-                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("WebSiteBanHang.Models.Category", b =>
                 {
-                    b.Navigation("ProductCategories");
+                    b.Navigation("Productions");
                 });
 
             modelBuilder.Entity("WebSiteBanHang.Models.Order", b =>
@@ -560,8 +536,6 @@ namespace WebSiteBanHang.Migrations
             modelBuilder.Entity("WebSiteBanHang.Models.Product", b =>
                 {
                     b.Navigation("OrderItems");
-
-                    b.Navigation("ProductCategories");
                 });
 
             modelBuilder.Entity("WebSiteBanHang.Models.User", b =>

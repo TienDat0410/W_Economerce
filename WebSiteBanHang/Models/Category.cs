@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore.Infrastructure;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebSiteBanHang.Models
 {
@@ -10,13 +11,14 @@ namespace WebSiteBanHang.Models
         [Required]
         [StringLength(100)]
         public string Name { get; set; }
+      
 
         public string Description { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
-        public ICollection<ProductCategory> ProductCategories { get; set; }
+        public ICollection<Product> Productions { get; set; } = new List<Product>();
 
     }
 }

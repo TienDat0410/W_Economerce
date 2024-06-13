@@ -1,5 +1,10 @@
-﻿using WebSiteBanHang.Interfaces;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using WebSiteBanHang.Interfaces;
 using WebSiteBanHang.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
 
 namespace WebSiteBanHang.Repositories
 {
@@ -12,35 +17,35 @@ namespace WebSiteBanHang.Repositories
             _context = context;
         }
 
-        public IEnumerable<Category> GetAllCategories()
+        public async Task<IEnumerable<Category>> GetAllCategoriesAsync()
         {
-            return _context.Categories.ToList();
+            return await _context.Categories.ToListAsync();
         }
 
-        public Category GetCategoryById(int categoryId)
+        public async Task<Category> GetCategoryByIdAsync(int categoryId)
         {
-            return _context.Categories.Find(categoryId);
+            return await _context.Categories.FindAsync(categoryId);
         }
 
-        public void AddCategory(Category category)
+        public async Task AddCategoryAsync(Category category)
         {
             _context.Categories.Add(category);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
-        public void UpdateCategory(Category category)
+        public async Task UpdateCategoryAsync(Category category)
         {
             _context.Categories.Update(category);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
-        public void DeleteCategory(int categoryId)
+        public async Task DeleteCategoryAsync(int categoryId)
         {
-            var category = _context.Categories.Find(categoryId);
+            var category = await _context.Categories.FindAsync(categoryId);
             if (category != null)
             {
                 _context.Categories.Remove(category);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
         }
     }
