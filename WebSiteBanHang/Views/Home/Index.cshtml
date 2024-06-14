@@ -1,7 +1,37 @@
-﻿
-@model IEnumerable<WebSiteBanHang.Models.Product>
+﻿@model WebSiteBanHang.Models.HomeViewModel
 
-<h2>Home page</h2>
+@{
+    ViewData["Title"] = "Products Index";
+}
 
+<h2>Products</h2>
 
-
+@foreach (var category in Model.Categories)
+{
+    <h3>@category.Name</h3>
+    <div class="row">
+        @foreach (var product in Model.Products.Where(p => p.CategoryId == category.CategoryId))
+        {
+            <div class="col-md-3">
+                <div class="card product-card mb-4">
+                    <img src="@product.ImageUrl" alt="@product.ProductName" class="card-img-top product-image" />
+                    <div class="card-body">
+                        <p class="card-text">@product.ProductName</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-action="Details" asp-route-id="@product.ProductId" class="btn btn-sm btn-outline-secondary">View</a>
+                                <a asp-action="Edit" asp-route-id="@product.ProductId" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                <form asp-action="AddToCart" method="post" style="display:inline;">
+                                    <input type="hidden" name="productId" value="@product.ProductId" />
+                                    <input type="number" name="quantity" value="1" min="1" class="form-control form-control-sm" style="width: 60px; display: inline-block; margin-right: 5px;" />
+                                    <button type="submit" class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                                </form>
+                            </div>
+                            <small class="text-muted">@product.Price.ToString("C")</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

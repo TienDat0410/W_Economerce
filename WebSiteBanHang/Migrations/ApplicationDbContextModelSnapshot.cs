@@ -366,6 +366,11 @@ namespace WebSiteBanHang.Migrations
                         .IsRequired()
                         .HasColumnType("BLOB SUB_TYPE TEXT");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("VARCHAR(255)");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("DECIMAL(18,2)");
 

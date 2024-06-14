@@ -1,25 +1,87 @@
 ﻿@model WebSiteBanHang.Models.Product
 
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
 <h1>Edit Product</h1>
 
-<form asp-action="Edit">
-    <input type="hidden" asp-for="ProductId" />
-    <div class="form-group">
-        <label asp-for="ProductName" class="control-label"></label>
-        <input asp-for="ProductName" class="form-control" />
-        <span asp-validation-for="ProductName" class="text-danger"></span>
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <input type="hidden" asp-for="ProductId" />
+            <input type="hidden" asp-for="ImageUrl" value="@Model.ImageUrl" /> <!-- Hidden input to carry the current ImageUrl -->
+            <div class="form-group">
+                <label asp-for="CategoryId" class="control-label">Category</label>
+                <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductName" class="control-label"></label>
+                <input asp-for="ProductName" class="form-control" />
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StockQuantity" class="control-label"></label>
+                <input asp-for="StockQuantity" class="form-control" />
+                <span asp-validation-for="StockQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Current Image</label>
+                <div>
+                    <img id="currentImage" src="@Model.ImageUrl" alt="Product Image" style="max-width: 200px; max-height: 200px;" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Upload New Image</label>
+                <input type="file" name="image" class="form-control" id="imageInput" />
+                <div>
+                    <img id="newImagePreview" alt="New Image Preview" style="max-width: 200px; max-height: 200px; display: none;" />
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
     </div>
-    <div class="form-group">
-        <label asp-for="Description" class="control-label"></label>
-        <input asp-for="Description" class="form-control" />
-        <span asp-validation-for="Description" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Price" class="control-label"></label>
-        <input asp-for="Price" class="form-control" />
-        <span asp-validation-for="Price" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <input type="submit" value="Save" class="btn btn-primary" />
-    </div>
-</form>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        document.getElementById('imageInput').addEventListener('change', function (event) {
+            var input = event.target;
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    var newImage = document.getElementById('newImagePreview');
+                    newImage.src = e.target.result;
+                    newImage.style.display = 'block';
+
+                    var currentImage = document.getElementById('currentImage');
+                    currentImage.style.display = 'none';
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        });
+    </script>
+}

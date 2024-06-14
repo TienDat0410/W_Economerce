@@ -1,0 +1,51 @@
+﻿@model WebSiteBanHang.Models.Order
+
+@{
+    ViewData["Title"] = "Shopping Cart";
+}
+
+<h2>Shopping Cart</h2>
+
+@if (Model.OrderItems.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Subtotal</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderItems)
+            {
+                <tr>
+                    <td>@item.Product.ProductName</td>
+                    <td>
+                        <form asp-action="UpdateCart" method="post" class="form-inline">
+                            <input type="hidden" name="ProductId" value="@item.ProductId" />
+                            <input type="number" name="Quantity" class="form-control" value="@item.Quantity" min="1" />
+                            <button type="submit" class="btn btn-primary ml-2">Update</button>
+                        </form>
+                    </td>
+                    <td>@item.Price.ToString("C")</td>
+                    <td>@(item.Quantity * item.Price).ToString("C")</td>
+                    <td>
+                        <form asp-action="RemoveFromCart" method="post">
+                            <input type="hidden" name="ProductId" value="@item.ProductId" />
+                            <button type="submit" class="btn btn-danger">Remove</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Your cart is empty.</p>
+}
+
+<a asp-action="Index" asp-controller="Home" class="btn btn-primary">Continue Shopping</a>

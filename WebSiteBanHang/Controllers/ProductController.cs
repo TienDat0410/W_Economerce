@@ -51,11 +51,18 @@ namespace WebSiteBanHang.Controllers
         // POST: Products/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductId,CategoryId,ProductName,Description,Price,StockQuantity")] Product product)
+        public async Task<IActionResult> Create([Bind("ProductId,CategoryId,ProductName,Description,Price,StockQuantity")] Product product, IFormFile image)
         {
             // Xóa các thuộc tính không cần thiết khỏi ModelState
             ModelState.Remove("Category");
             ModelState.Remove("OrderItems");
+            ModelState.Remove("ImageUrl");
+            if (image != null && image.Length > 0)
+            {
+                var imageUrl = await _productRepository.SaveProductImageAsync(image);
+                product.ImageUrl = imageUrl;
+            }
+
             if (ModelState.IsValid)
             {
                 product.CreatedAt = DateTime.Now;
@@ -65,10 +72,12 @@ namespace WebSiteBanHang.Controllers
             }
 
             // Log the errors in ModelState
-            var errors = ModelState.Values.SelectMany(v => v.Errors);
-            foreach (var error in errors)
+            foreach (var modelState in ModelState.Values)
             {
-                Console.WriteLine(error.ErrorMessage);
+                foreach (var error in modelState.Errors)
+                {
+                    Console.WriteLine(error.ErrorMessage);
+                }
             }
 
             ViewData["CategoryId"] = new SelectList(await _categoryRepository.GetAllCategoriesAsync(), "CategoryId", "Name", product.CategoryId);
@@ -95,19 +104,51 @@ namespace WebSiteBanHang.Controllers
         // POST: Products/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProductId,CategoryId,ProductName,Description,Price,StockQuantity,CreatedAt,UpdatedAt")] Product product)
+        public async Task<IActionResult> Edit(int id, [Bind("ProductId,CategoryId,ProductName,Description,Price,StockQuantity,ImageUrl,CreatedAt,UpdatedAt")] Product product, IFormFile image)
         {
             if (id != product.ProductId)
             {
                 return NotFound();
             }
 
+            ModelState.Remove("Category");
+            ModelState.Remove("OrderItems");
+            ModelState.Remove("ImageUrl");
+
+            // Lấy thông tin sản phẩm hiện tại từ cơ sở dữ liệu
+            var existingProduct = await _productRepository.GetProductByIdAsync(id);
+            if (existingProduct == null)
+            {
+                return NotFound();
+            }
+
+            // Giữ nguyên ImageUrl hiện tại nếu không có hình ảnh mới
+            if (image == null || image.Length == 0)
+            {
+                product.ImageUrl = existingProduct.ImageUrl;
+                ModelState.Remove("image");
+            }
+
             if (ModelState.IsValid)
             {
                 try
                 {
-                    product.UpdatedAt = DateTime.Now;
-                    await _productRepository.UpdateProductAsync(product);
+                    // Cập nhật các thuộc tính từ sản phẩm chỉnh sửa
+                    existingProduct.CategoryId = product.CategoryId;
+                    existingProduct.ProductName = product.ProductName;
+                    existingProduct.Description = product.Description;
+                    existingProduct.Price = product.Price;
+                    existingProduct.StockQuantity = product.StockQuantity;
+                    existingProduct.UpdatedAt = DateTime.Now;
+
+                    // Cập nhật hình ảnh nếu có
+                    if (image != null && image.Length > 0)
+                    {
+                        var imageUrl = await _productRepository.SaveProductImageAsync(image);
+                        existingProduct.ImageUrl = imageUrl;
+                    }
+
+                    await _productRepository.UpdateProductAsync(existingProduct);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -122,10 +163,10 @@ namespace WebSiteBanHang.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+
             ViewData["CategoryId"] = new SelectList(await _categoryRepository.GetAllCategoriesAsync(), "CategoryId", "Name", product.CategoryId);
             return View(product);
         }
-
         // GET: Products/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -142,20 +183,19 @@ namespace WebSiteBanHang.Controllers
 
             return View(product);
         }
+            // POST: Products/Delete/5
+            [HttpPost, ActionName("Delete")]
+            [ValidateAntiForgeryToken]
+            public async Task<IActionResult> DeleteConfirmed(int id)
+            {
+                await _productRepository.DeleteProductAsync(id);
+                return RedirectToAction(nameof(Index));
+            }
 
-        // POST: Products/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            await _productRepository.DeleteProductAsync(id);
-            return RedirectToAction(nameof(Index));
-        }
-
-        private async Task<bool> ProductExists(int id)
-        {
-            var product = await _productRepository.GetProductByIdAsync(id);
-            return product != null;
-        }
+            private async Task<bool> ProductExists(int id)
+            {
+                var product = await _productRepository.GetProductByIdAsync(id);
+                return product != null;
+            }
     }
 }

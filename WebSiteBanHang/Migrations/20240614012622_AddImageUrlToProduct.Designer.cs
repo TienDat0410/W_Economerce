@@ -12,8 +12,8 @@ using WebSiteBanHang.Models;
 namespace WebSiteBanHang.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240613032048_UpdateProductModel")]
-    partial class UpdateProductModel
+    [Migration("20240614012622_AddImageUrlToProduct")]
+    partial class AddImageUrlToProduct
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -368,6 +368,11 @@ namespace WebSiteBanHang.Migrations
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("BLOB SUB_TYPE TEXT");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("VARCHAR(255)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("DECIMAL(18,2)");
