@@ -14,3 +14,6 @@ Thạc sỹ (tìm hiểu database Firebird)
   },
   "AllowedHosts": "*"
 }
+//update migration
+dotnet ef migrations add UpdateProductModel
+dotnet ef database update

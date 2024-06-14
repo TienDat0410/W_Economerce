@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace WebSiteBanHang.Migrations
 {
     /// <inheritdoc />
-    public partial class AddImageUrlToProduct : Migration
+    public partial class UpdateProductModel : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -203,7 +203,7 @@ namespace WebSiteBanHang.Migrations
                     StockQuantity = table.Column<int>(type: "INTEGER", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "TIMESTAMP", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "TIMESTAMP", nullable: false),
-                    ImageUrl = table.Column<string>(type: "VARCHAR(255)", maxLength: 255, nullable: false)
+                    ImageUrl = table.Column<string>(type: "BLOB SUB_TYPE TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

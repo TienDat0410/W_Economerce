@@ -5,11 +5,18 @@ using WebSiteBanHang.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using WebSiteBanHang.Models;
 using WebSiteBanHang.Data;
+using Newtonsoft.Json;
+using Microsoft.Extensions.DependencyInjection; // Ensure this is included
+using Microsoft.AspNetCore.Mvc.NewtonsoftJson; // Ensure this is included
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews()
+    .AddNewtonsoftJson(options =>
+    {
+        options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+    });
 
 // Cấu hình DbContext để sử dụng Firebird
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -25,6 +32,7 @@ builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
 
 // Thêm cấu hình cho IWebHostEnvironment
 builder.Services.AddSingleton<IWebHostEnvironment>(builder.Environment);
+
 // Cấu hình session
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
@@ -33,7 +41,6 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
-
 
 var app = builder.Build();
 
